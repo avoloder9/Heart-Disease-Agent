@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  font-size: 16px;
+}
+
+.container {
+  width: 50%;
+  max-width: 1200px;
+  margin: 60px auto 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+form button {
+  margin-left: 3%;
+}
+.form-group {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  display: flex;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.radio_button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.radio_button label input {
+  margin-left: 20px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form .lijevi_div,
+form .desni_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+form .lijevi_div {
+  margin-right: 20px;
+  width: 47%;
+}
+
+form .desni_div {
+  width: 47%;
+  margin-left: 20px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.lijevi_div,
+.desni_div {
+  margin-right: 0;
+  margin-left: 0;
+}
+.btn {
+  margin-right: 10px;
+  margin-left: 40px;
+  padding: 10px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.rezultat {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}

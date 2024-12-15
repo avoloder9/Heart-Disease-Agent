@@ -1,0 +1,180 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI AGENT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="heartForm">
+        <div class="lijevi_div">
+          <div class="form-group">
+            <label for="godina">Broj godina</label>
+            <input
+              type="number"
+              class="form-control"
+              id="godina"
+              name="godina"
+              placeholder="Broj godina"
+              min="18"
+              max="120"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Spol</label>
+            <div class="radio_button">
+              <label>
+                Ženski <input type="radio" name="spol" value="0" />
+              </label>
+              <label>
+                Muški <input type="radio" name="spol" value="1" />
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="tipBoli">Tip boli u grudima</label>
+            <select class="form-control" id="tipBoli" name="tipBoli">
+              <option value="" selected>Odaberi</option>
+              <option value="0">Asimptomatski</option>
+              <option value="1">Atipična angina</option>
+              <option value="2">Neangiozni bol</option>
+              <option value="3">Tipična angina</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pritisak">Krvni pritisak u mirovanju</label>
+            <input
+              type="number"
+              class="form-control"
+              id="pritisak"
+              name="pritisak"
+              placeholder="Krvni pritisak (50-250)"
+              min="50"
+              max="250"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="holesterol">Holesterol</label>
+            <input
+              type="number"
+              class="form-control"
+              id="holesterol"
+              name="holesterol"
+              placeholder="Holesterol (0-10)"
+              min="0"
+              max="10"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="secer">Šećer natašte</label>
+            <select class="form-control" id="secer" name="secer">
+              <option value="" disabled selected>Odaberi</option>
+              <option value="0">Ne</option>
+              <option value="1">Da</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p class="rezultat"></p>
+          </div>
+        </div>
+
+        <div class="desni_div">
+          <div class="form-group">
+            <label for="ecg">EKG</label>
+            <select class="form-control" id="ecg" name="ecg">
+              <option value="" disabled selected>Odaberi</option>
+              <option value="0">Hipertrofija lijeve komore</option>
+              <option value="1">Normalno</option>
+              <option value="2">Abnormalnost ST-T talasa</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="brojOtkucaja">Maksimalni broj otkucaja srca</label>
+            <input
+              type="number"
+              class="form-control"
+              id="brojOtkucaja"
+              name="brojOtkucaja"
+              placeholder="Maksimalni broj otkucaja srca (50-250)"
+              min="50"
+              max="250"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="angina">Angina izazvana vježbanjem</label>
+            <select class="form-control" id="angina" name="angina">
+              <option value="" disabled selected>Odaberi</option>
+              <option value="0">Ne</option>
+              <option value="1">Da</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="stDepresija">ST depresija izazvana vježbanjem</label>
+            <input
+              type="number"
+              class="form-control"
+              id="stDepresija"
+              name="stDepresija"
+              placeholder="ST depresija (0-6)"
+              min="0"
+              max="6"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="nagib">Nagib vršnog segmenta vježbe</label>
+            <select class="form-control" id="nagib" name="nagib">
+              <option value="" disabled selected>Odaberi</option>
+              <option value="0">Nizbrdo</option>
+              <option value="1">Ravno</option>
+              <option value="2">Uzbrdo</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="krvniSudovi"
+              >Broj velikih krvnih sudova obojenih fluoroskopijom</label
+            >
+            <select class="form-control" id="krvniSudovi" name="krvniSudovi">
+              <option value="" disabled selected>Odaberi</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="talasemija">Talasemija </label>
+            <select class="form-control" id="talasemija" name="talasemija">
+              <option value="" disabled selected>Odaberi</option>
+              <option value="1">Fiksni defekt</option>
+              <option value="2">Normalan protok krvi</option>
+              <option value="3">Reverzibilni defekt</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button class="btn" type="submit" onclick="trainModel()">
+              Treniraj podatke
+            </button>
+            <button class="btn" type="submit" onclick="predictResult()">
+              Predvidi rezultat
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js" />
+  </body>
+</html>
