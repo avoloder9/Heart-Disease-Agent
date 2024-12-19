@@ -106,12 +106,12 @@ form .desni_div {
 }
 .btn {
   margin-right: 10px;
-  margin-left: 40px;
+  margin-left: 45px;
   padding: 10px 10px;
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
 }
@@ -124,6 +124,27 @@ form .desni_div {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 16px;
+  font-size: 22px;
   margin-top: 20px;
+}
+.deskripcija {
+  display: none;
+  position: absolute;
+  background-color: #f8f6f6;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 15px;
+  width: 22%;
+  text-align: center;
+  color: #282829;
+  font-size: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+label:hover span {
+  opacity: 1;
+  display: inline-block;
+}
+
+label:hover {
+  cursor: pointer;
 }

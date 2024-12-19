@@ -53,7 +53,7 @@
               class="form-control"
               id="pritisak"
               name="pritisak"
-              placeholder="Krvni pritisak (50-250)"
+              placeholder="Krvni pritisak "
               min="50"
               max="250"
             />
@@ -73,7 +73,12 @@
           </div>
 
           <div class="form-group">
-            <label for="secer">Šećer natašte</label>
+            <label for="secer"
+              >Šećer natašte
+              <span class="deskripcija"
+                >Šećer u krvi natašte veći od 120 mg/dl ili 6.7 mmol/L
+              </span>
+            </label>
             <select class="form-control" id="secer" name="secer">
               <option value="" disabled selected>Odaberi</option>
               <option value="0">Ne</option>
@@ -87,7 +92,14 @@
 
         <div class="desni_div">
           <div class="form-group">
-            <label for="ecg">EKG</label>
+            <label for="ecg"
+              >EKG u mirovanju
+              <span class="deskripcija"
+                >Test koji mjeri električnu aktivnost srca i pomaže u
+                dijagnostici srčanih problema.</span
+              >
+            </label>
+
             <select class="form-control" id="ecg" name="ecg">
               <option value="" disabled selected>Odaberi</option>
               <option value="0">Hipertrofija lijeve komore</option>
@@ -103,14 +115,20 @@
               class="form-control"
               id="brojOtkucaja"
               name="brojOtkucaja"
-              placeholder="Maksimalni broj otkucaja srca (50-250)"
+              placeholder="Maksimalni broj otkucaja srca"
               min="50"
               max="250"
             />
           </div>
 
           <div class="form-group">
-            <label for="angina">Angina izazvana vježbanjem</label>
+            <label for="angina"
+              >Angina izazvana vježbanjem
+              <span class="deskripcija"
+                >Angina izazvana vježbanjem je bol u prsima koja se javlja tokom
+                fizičkog napora zbog smanjenog dotoka krvi u srčani mišić
+              </span>
+            </label>
             <select class="form-control" id="angina" name="angina">
               <option value="" disabled selected>Odaberi</option>
               <option value="0">Ne</option>
@@ -119,7 +137,14 @@
           </div>
 
           <div class="form-group">
-            <label for="stDepresija">ST depresija izazvana vježbanjem</label>
+            <label for="stDepresija"
+              >ST depresija izazvana vježbanjem
+
+              <span class="deskripcija"
+                >Označava smanjenje ST segmenta na EKG-u tokom fizičke
+                aktivnosti
+              </span>
+            </label>
             <input
               type="number"
               class="form-control"
@@ -132,7 +157,13 @@
           </div>
 
           <div class="form-group">
-            <label for="nagib">Nagib vršnog segmenta vježbe</label>
+            <label for="nagib"
+              >Nagib vršnog segmenta vježbe
+              <span class="deskripcija"
+                >Odnosi se na promjene u obliku elektrokardiograma (EKG),
+                posebno u dijelu koji prikazuje električnu aktivnost srca.</span
+              >
+            </label>
             <select class="form-control" id="nagib" name="nagib">
               <option value="" disabled selected>Odaberi</option>
               <option value="0">Nizbrdo</option>
@@ -143,8 +174,12 @@
 
           <div class="form-group">
             <label for="krvniSudovi"
-              >Broj velikih krvnih sudova obojenih fluoroskopijom</label
-            >
+              >Broj velikih krvnih sudova obojenih fluoroskopijom
+              <span class="deskripcija">
+                Označava količinu glavnih krvnih sudova koji su vidljivi uz
+                pomoć rendgenske slike s kontrastnim sredstvom.</span
+              >
+            </label>
             <select class="form-control" id="krvniSudovi" name="krvniSudovi">
               <option value="" disabled selected>Odaberi</option>
               <option value="0">0</option>
@@ -155,7 +190,15 @@
           </div>
 
           <div class="form-group">
-            <label for="talasemija">Talasemija </label>
+            <label for="talasemija"
+              >Talasemija
+
+              <span class="deskripcija">
+                Označava smanjenje nivoa hemoglobina i abnormalnosti u crvenim
+                krvnim zrncima, što ukazuje na genetski poremećaj u proizvodnji
+                hemoglobina.</span
+              >
+            </label>
             <select class="form-control" id="talasemija" name="talasemija">
               <option value="" disabled selected>Odaberi</option>
               <option value="1">Fiksni defekt</option>
@@ -175,6 +218,6 @@
         </div>
       </form>
     </div>
-    <script src="script.js" />
+    <script src="script.js"></script>
   </body>
 </html>

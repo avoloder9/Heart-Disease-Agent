@@ -62,6 +62,10 @@ function predictResult() {
           resultParagraph.textContent = `Predviđena vjerovatnoća za bolest srca je: ${probability.toFixed(
             2
           )}%`;
+
+          setTimeout(() => {
+            resultParagraph.textContent = "";
+          }, 7000);
         } else {
           resultParagraph.textContent =
             "Nemoguće interpretirati vjerovatnoću iz odgovora servera.";
@@ -82,6 +86,9 @@ function trainModel() {
   event.preventDefault();
   fetch("http://localhost:5103/api/HeartDisease/train", {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
   })
     .then((response) => {
       if (response.ok) {
