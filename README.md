@@ -26,13 +26,14 @@ The **Heart Disease Prediction Agent** is an AI-powered application designed to 
 
 - **C# and .NET Core**: The backbone of the agent, providing robust tools for application development and seamless integration with machine learning libraries.  
 - **ML.NET**: Enables the agent to build, train, and evaluate the predictive model.  
+- **HTML, CSS, and JavaScript**: Used together to structure, style, and add interactivity to the frontend, enabling the creation of a responsive user interface with dynamic features such as form handling, data fetching, and real-time updates.
 - **CSV File**: Used as a structured format for storing and managing the dataset.  
-
 ---
 
 ## 🚀 How to Use  
 
 1. Place your medical data file (`heart.csv`) in the appropriate directory.  
-2. Run the application and allow the model to train on the data.  
-3. Enter patient details when prompted to receive heart disease predictions.  
-4. The program will append new data entries and predictions to the CSV file.  
+2. Install dependencies: Open your terminal or command prompt, navigate to the project directory, and run the following command to install the necessary dependencies: **npm install**
+3. Run the application: After the dependencies are installed, start the development server to run the application: **npm run dev**
+4. Enter patient details when prompted to receive heart disease predictions.  
+5. The program will append new data entries and predictions to the CSV file.  
